@@ -1,15 +1,21 @@
-\section{Grundlagen der LA und der Fehlerberechnung}
+\section{Grundlagen}
 
-\subsection{Normen)}
+\subsection{Normierte Räume)}
 
-Eine Norm ist eine Abbildung $ \|\cdot \|$ von einem Vektorraum $ V$ über dem Körper $  \mathbb {K} $  der reellen oder der komplexen Zahlen in die Menge der nichtnegativen reellen Zahlen $  {\mathbb {R} }_{0}^{+} $,
+Sei $\mathbb{K}=\mathbb{C}$ ein Körper und $\mathbb{K}=\mathbb{C}$ ein Körper und $V$ ein Vektorraum über $\mathbb{K}$.
 
-$  \|\cdot \|\colon V\to {\mathbb {R} }_{0}^{+},\;x\mapsto \|x\| $,
-die für alle Vektoren $  x,y\in V $ und alle Skalare $  \alpha \in \mathbb {K} $  die folgenden drei Axiome erfüllt:
+\subsubsection{Norm}
+Eine Abbildung $\|\cdot\|:V\longrightarrow\mathbb{R}$ heißt Norm \textbf{Norm}, falls gilt:
+\begin{align*}
+	\|v\|  >  0  \forall  v  \in  V\backslash\left\lbrace 0 \right\rbrace \text{(Definitheit)} \\
+	\|\lambda v\|  =  |\lambda|\cdot\|v\|  \forall\lambda  \in  \mathbb{K},\forall v\in V\text{(absolute Homogenität)}\\
+	\|v+w\| \le \| v\| \| w\| \forall v,w \in V \text{(Subadditivität bzw. Dreiecksungleichung)}
+\end{align*}
 
-(1) Definitheit:	$  \|x\|=0\;\Rightarrow \;x=0 $,\\
-(2) absolute Homogenität:	$  \|\alpha \cdot x\|=|\alpha |\cdot \|x\| $,\\
-(3) Subadditivität oder Dreiecksungleichung:	$ \|x+y\|\leq \|x\|+\|y\| $.\\
-\\
-Hierbei bezeichnet  $|\cdot |$ den Betrag des Skalars.\\
-$(V,\|\cdot \|)$ heißt normierter Vektorraum.
+Standardbeispiel für eine Norm ist die \textbf{euklidische Norm} eines Vektors $(x,y)$ in der Ebene $\mathbb{R}^2$
+\begin{align*}
+	\|(x,y)\| = \sqrt{x^2+y^2}
+\end{align*}
+
+\subsubsection{Normierter Raum}
+Ein Vektorraum $V$ zusammen mit einer Norm $\|\cdot\|$, geschrieben $(V, \|\cdot\|)$, heißt \textbf{normierter Raum}.
